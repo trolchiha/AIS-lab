@@ -1,0 +1,5 @@
+---
+- hosts: remote_host
+  remote_user: root
+  roles:
+    - update_hostname_role

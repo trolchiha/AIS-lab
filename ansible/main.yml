@@ -1,0 +1,6 @@
+---
+- name: Update hostname
+  hosts: remote_host
+  become: true
+  roles:
+    - update_hostname
