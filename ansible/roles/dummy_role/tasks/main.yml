@@ -1,0 +1,8 @@
+---
+- name: Update hostname
+  hosts: remote_hosts
+  become: yes
+  tasks:
+    - name: Set hostname
+      hostname:
+        name: "olena-trotsko-lab2"
