@@ -1,4 +1,4 @@
 ---
 - name: Update /etc/hostname
   hostname:
-    name: 'ubuntu-server'
+    name: 'olenatrotsko-ubuntu-server'

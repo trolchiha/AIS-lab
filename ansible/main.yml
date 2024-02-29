@@ -1,6 +1,15 @@
----
-- name: Update hostname
+# ---
+# - name: Update hostname
+#   hosts: remote_host
+#   become: true
+#   roles:
+#     - update_hostname
+
+
+# ansible-playbook -i inventory main.yml -e "package_name=neofetch"
+
+- name: Install package
   hosts: remote_host
   become: true
   roles:
-    - update_hostname
+    - install_package

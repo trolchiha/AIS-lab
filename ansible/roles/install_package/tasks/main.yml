@@ -1,0 +1,14 @@
+---
+- name: Install package on Debian
+  become: true
+  package:
+    name: "{{ package_name }}"
+    state: present
+  when: ansible_os_family == "Debian"
+
+- name: Install package on RedHat
+  become: true
+  yum:
+    name: "{{ package_name }}"
+    state: present
+  when: ansible_os_family == "RedHat"
