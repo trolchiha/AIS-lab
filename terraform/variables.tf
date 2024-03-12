@@ -1,15 +1,7 @@
-variable "ec2_ami" {
-    type = map
-
-  default = {
-    eu-west-2 = "ami-0cd59ecaf368e5ccf"
-   }
-   
- }
-variable "region" {
-  default = "eu-west-2"
+variable "ram" {
+  default = "1024 mib"
 }
 
-variable "instance_type" {
-  default = "t2.micro"
+variable "img" {    
+  default = "https://vagrantcloud.com/ubuntu/boxes/xenial64/versions/20180420.0.0/providers/virtualbox.box"
 }
